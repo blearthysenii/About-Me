@@ -1,0 +1,131 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4a148c;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-decoration: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+nav a:hover,
+nav a.active {
+    text-decoration: underline;
+    color: #e1bee7;
+}
+
+/* Each section fills full viewport */
+.section {
+    height: 100vh;
+    padding: 100px 20px 20px; /* lart për header-in fikse */
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    display: none; /* Hide all by default */
+    overflow-y: auto;
+}
+
+/* Show only active section */
+.section.active {
+    display: block;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+    color: #4a148c;
+}
+
+.project-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: #e1bee7;
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1 1 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #311b92;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+form label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4a148c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #311b92;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #4a148c;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
