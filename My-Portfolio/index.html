@@ -1,71 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio - Bleart Hyseni
-    </title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bleart Hyseni | Developer Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About Me</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home" class="section active">
-        <h1>Hello! I'm Your Name</h1>
-        <p>I am a web developer passionate about creating modern applications.</p>
+  <header>
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section" data-aos="fade-up" tabindex="0">
+      <h1>Hi, I'm Bleart Hyseni</h1>
+      <p>Creative Full Stack Developer building modern, beautiful web experiences.</p>
     </section>
 
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>Write something about your background, education, experience, and skills here.</p>
+    <section id="about" class="section" data-aos="fade-up" data-aos-delay="150" tabindex="0">
+      <h2>About Me</h2>
+      <p>I'm passionate about frontend and backend technologies. My stack includes HTML, CSS, JavaScript, React, Node.js, MongoDB, and more.</p>
     </section>
 
-    <section id="projects" class="section">
-        <h2>My Projects</h2>
-        <div class="project-list">
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Short description of the project.</p>
-                <a href="#" target="_blank">View More</a>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Short description of the project.</p>
-                <a href="#" target="_blank">View More</a>
-            </div>
-        </div>
+    <section id="projects" class="section" data-aos="fade-up" data-aos-delay="300" tabindex="0">
+      <h2>Projects</h2>
+      <p>Here are a few of my favorite projects:</p>
+      <ul>
+        <li><strong>Portfolio Website</strong> – The one you're looking at!</li>
+        <li><strong>Task Manager App</strong> – A full MERN-stack productivity tool.</li>
+        <li><strong>Fitness Tracker</strong> – Tracks habits, workouts, and health data.</li>
+      </ul>
     </section>
 
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label><br />
-            <input type="text" id="name" name="name" required /><br />
-
-            <label for="email">Email:</label><br />
-            <input type="email" id="email" name="email" required /><br />
-
-            <label for="message">Message:</label><br />
-            <textarea id="message" name="message" rows="4" required></textarea><br />
-
-            <button type="submit">Send</button>
-        </form>
-        <p id="formMessage"></p>
+    <section id="contact" class="section" data-aos="fade-up" data-aos-delay="450" tabindex="0">
+      <h2>Contact Me</h2>
+      <p>📧 <a href="mailto:youremail@example.com" class="email-link">youremail@example.com</a></p>
+      <button class="button" type="button">Let's Connect</button>
     </section>
+  </main>
 
-    <footer>
-        <p>© 2025 Your Name | Portfolio</p>
-    </footer>
+  <footer>
+    <p>© 2025 Bleart Hyseni | All rights reserved.</p>
+  </footer>
 
-    <script src="script.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 500,      
+      easing: 'ease-out', 
+      once: true,         
+      offset: 20          
+    });
+  </script>
+
+  <!-- Optional external JS -->
+  <script src="script.js"></script>
+
 </body>
 </html>
